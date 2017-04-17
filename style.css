@@ -27,10 +27,19 @@
 	margin: 30px;
 }
 
+.date {
+	font-size: 12px;
+	color: grey;
+	font-style: italic;
+	font-weight: lighter;
+}
+
 footer {
 	border: solid 2px black;
 	background-color: #C0C0C0;
 	color: #DCDCDC;
 	text-transform: uppercase;
-	max-width: 50%;
+	display: block;
+	margin: 32px;
+	max-width: 40%;
 }
