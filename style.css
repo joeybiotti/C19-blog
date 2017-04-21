@@ -5,11 +5,11 @@
 }
 
 
-
 .navbar {
 	background-color: darkgrey;
 	border: solid 2px black;
 	max-width: 60%;
+	display: flex;
 
 }
 
