@@ -8,8 +8,7 @@
 .navbar {
 	background-color: darkgrey;
 	border: solid 2px black;
-	max-width: 60%;
-	display: flex;
+	max-width: 100%;
 
 }
 
@@ -23,14 +22,16 @@
 	background-color: whitesmoke;
 	color: #2F4F4F;
 	border: solid 2px black;
-	max-width: 60%;
+	max-width:60%;
 	margin: 30px;
+	padding: 10em;
 }
 
 
 .weekly{
 	font-weight: 800;
 	text-decoration: underline;
+	margin: auto;
 }
 
 footer {
@@ -38,5 +39,5 @@ footer {
 	background-color: darkslategrey;
 	color: #DCDCDC;
 	text-transform: uppercase;
-	max-width: 50%;
+	max-width: 100%;
 }
