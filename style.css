@@ -1,14 +1,15 @@
 .blog_header {
 	text-transform: uppercase;
-	max-width: 60%;
-	margin: 32px;
+	max-width: 100%;
+	margin: auto;
 }
 
 
 .navbar {
-	background-color: darkgrey;
+	background-color: #a3a1a1;
 	border: solid 2px black;
 	max-width: 100%;
+	opacity: .95;
 
 }
 
@@ -19,14 +20,16 @@
 }
 
 .wrapper {
-	background-color: whitesmoke;
-	color: #2F4F4F;
-	border: solid 2px black;
-	max-width:60%;
+	background-color: #e3dede;
+	color:#333030;
+	max-width:100%;
 	margin: 30px;
 	padding: 10em;
 }
 
+.blogposts {
+	margin: auto;
+}
 
 .weekly{
 	font-weight: 800;
@@ -36,8 +39,8 @@
 
 footer {
 	border: solid 2px black;
-	background-color: darkslategrey;
-	color: #DCDCDC;
+	background-color: #333030;
+	color: #6d819c;
 	text-transform: uppercase;
 	max-width: 100%;
 }
