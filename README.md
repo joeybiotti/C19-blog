@@ -1,3 +1,1 @@
-# Blog
-## HTML with CSS styling.
-### Added Bootstrap on 4/26.
+`This is just a plain old html blog. I write posts at the end of the week because its easy, but I'll probably add a JS file soon. Sometimes I mess around with the css when I think I need practice. Pretty boring stuff.`
