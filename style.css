@@ -1,3 +1,7 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
 .blog_header {
 	text-transform: uppercase;
 	max-width: 100%;
@@ -8,6 +12,7 @@
 .navbar {
 	background-color: #a3a1a1;
 	border: solid 2px black;
+	font-family: 'Roboto', sans-serif;
 	max-width: 100%;
 	opacity: .95;
 
@@ -34,10 +39,12 @@
 .weekly{
 	font-weight: 800;
 	text-decoration: underline;
+	font-family: 'Roboto', sans-serif;
 	margin: auto;
 }
 
 footer {
+	font-family: 'Roboto', sans-serif;
 	border: solid 2px black;
 	background-color: #333030;
 	color: #6d819c;
