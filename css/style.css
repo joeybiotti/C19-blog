@@ -24,6 +24,7 @@ body {
 ul li {
   display: inline;
   text-decoration: none;
+  word-spacing: auto;
   font-family: "Raleway", sans-serif; }
 
 .blog_footer {
@@ -35,7 +36,7 @@ ul li {
   background-color: #dddfe6;
   margin: 5em;
   padding: 2em;
-  border: 3px solid #252c41; }
+  border: 2.25px solid #252c41; }
 
 .wrapper {
   background-color: #f4f5f9; }
@@ -61,3 +62,8 @@ p .post {
   color: #f1404b;
   margin: auto;
   padding: auto; }
+
+a:hover {
+  color: firebrick;
+  font-size: 1.1em;
+  opacity: 0.6%; }

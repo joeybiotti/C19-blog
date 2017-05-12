@@ -1,15 +1,20 @@
 @import "_reset.scss";
 @import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
+
+
 //colors
 $primary: #f1404b;
 $secondary: #dddfe6;
 $tertiary: #252c41;
 $white: #f4f5f9;
+
+
+
 //fonts
-$header-font: "Roboto",
-sans-serif;
-$body-font: "Raleway",
-sans-serif;
+$header-font: "Roboto", sans-serif;
+$body-font: "Raleway", sans-serif;
+
+//styling starts here
 body {
     background-color: $white;
 }
@@ -33,6 +38,7 @@ ul {
     li {
         display: inline;
         text-decoration: none;
+        word-spacing: auto;
         font-family: $body-font;
     }
 }
@@ -47,7 +53,7 @@ ul {
     background-color: $secondary;
     margin: 5em;
     padding: 2em;
-    border: 3px solid $tertiary;
+    border: 2.25px solid $tertiary;
 }
 
 .wrapper {
@@ -78,4 +84,11 @@ p .post {
     color: $primary;
     margin: auto;
     padding: auto;
+}
+
+a:hover{
+    color: firebrick;
+    font-size: 1.1em;
+    opacity: 0.6%
+
 }
