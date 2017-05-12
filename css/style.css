@@ -9,13 +9,17 @@ ol {
 body {
   background-color: #f4f5f9; }
 
+.wrapper {
+  background-color: #252c41; }
+
 .blog_header {
   width: 100%;
   margin: auto;
   background-color: #f1404b; }
-  .blog_header #name #subtitle {
-    color: #f1404b;
-    font-family: "Roboto", sans-serif; }
+
+#name {
+  color: #f1404b;
+  font-family: "Roboto", sans-serif; }
 
 ul li {
   display: inline;
@@ -30,7 +34,8 @@ ul li {
 .blogpost {
   background-color: #dddfe6;
   margin: 5em;
-  padding: 2em; }
+  padding: 2em;
+  border: 3px solid #252c41; }
 
 .wrapper {
   background-color: #f4f5f9; }
@@ -48,3 +53,6 @@ p .post {
   font-size: 0.7em;
   padding: auto;
   margin: auto; }
+
+.navbar a {
+  color: #f1404b; }

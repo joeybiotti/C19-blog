@@ -1,8 +1,10 @@
-console.log("what up main.js")
+"use strict";
+
+console.log("main.js");
 
 let blogPost = [{
     week: "Week One",
-    entry: "Lorem ipsum dolor sit amet, erat praesent sed integer quis, aliquet neque ultrices condimentum blandit iaculis non, at 	in. Molestiae lorem tempor dolor nulla per, integer at imperdiet. Wisi vivamus vitae dui blandit in, hendrerit turpis. Mi leo suspendisse suspendisse lacinia tincidunt amet, sed dui feugiat venenatis parturient, aliquam sodales ullamcorper, lectus vitae justo quisque egestas ac eu, integer lectus urna viverra cras libero architecto. Ornare magna vel.",
+    entry: "Lorem ipsum dolor sit amet, erat praesent sed integer quis, aliquet neque ultrices condimentum blandit iaculis non, at  in. Molestiae lorem tempor dolor nulla per, integer at imperdiet. Wisi vivamus vitae dui blandit in, hendrerit turpis. Mi leo suspendisse suspendisse lacinia tincidunt amet, sed dui feugiat venenatis parturient, aliquam sodales ullamcorper, lectus vitae justo quisque egestas ac eu, integer lectus urna viverra cras libero architecto. Ornare magna vel.",
 }, {
     week: "Week Two",
     entry: "When I started ths blog, I used lorem ipsum as placeholder text. Five whole paragraphs of it. In retrospect, it was a missed oppurtunity to actually document the week to week progress I make at NSS. Going forward, that's what I'll use this for. This past week was the second week and things are progressing. I thought I had a better handle on HTML and CSS than I actually do, but that's ok. I figured out some of the mistakes I was making and I'm learning not to make them over and over again. I've also embraced the MVP ethos-- its more important that things work like they're supposed to rather than look nice. I need to continue to keep that in mind. I mean, things should still look nice, but I shouldn't waste time picking the perfect typography if the JavaScript won't run. Which brings me to my next point. JavaScript. I need to practice. I understand the concepts but putting into into practice isn't alway the easiest. I'm confident I can pick it up though. Ok. That's all for this week.",
@@ -15,20 +17,25 @@ let blogPost = [{
 }, {
     week: "Week Five",
     entry: "Another week is down. Things are still moving suepr fast, but I think I'm grasping everything. This week we mostly worked on a group project, which ended up being really fun. It also felt like the first real web app we've built. The translator was pretty involved, but Chatty actually seemed like something you'd find on the internet. It ended up being a lot of fun.</p><p>I'm still pretty surprised how often I struggle with something only for it to start making sense when we move on to the next step. I guess it's because some of the concepts only start to make sense in a larger context. Its happened a few times before and its <i>starting</i> to happen with IIFEs and JSON. I still need to practice those.</p><p>After the projects were presented, we went a little bit deeper with NPM, Bower and Grunt. I can see how something like Grunt makes life easier because it does all the things I tend to forget about! Its not so muhc that it does all the heavy lifting, but it takes care of all the boring stuff.</p><p>We dipped our toes into JQuery this week as well, which I'm pretty excited about. I know its important to be able to read and write plain jane JavaScript, but JQuery looks so much easier. I'm sure there's a learning curve, but I'm looking forward to being able to type less words and more dollar signs.</p>"
+}, {
+    week: "Week Six",
+    entry: "This week was... intense. I feel like I learned alot, but when I try to actually recall it all, it gets hazy. Here's what I remember:<br> We learned how to use Grunt and Browserify, both of which are extremely helpful and make things <strong>much</strong> easier.<p>Grunt takes care of all the stuff that's easy to forget about, like telling setting Sass to watch CSS. Browserify is a little more complex and I still need to play around with it, but I like being able to compile multiple JavaScript files in to one long file and only having to attach that one. I feel pretty good about setting it up, but I need some practice with it. To get used to the process of installing Grunt and Browserify, I've been adding it to all the projects I've working on, even if I don't intend to use it. For example, there's a Gruntfile for this blog, but I don't actually need it. Although Grunt made practicing Sass much easier, so I guess there's that too.<p>Finally, we worked with Handlebars.js and it made my head hurt. I get the concept and I totally see why its useful, but it felt like a lot to take int at once. Like Grunt and Browserify, I just need to start using it on projects even if I don't actually need to. I was going to last night, but I decided to let it soak in a little bit. My post next week may incorporate Handlebars.js and/or JSON. I need to work more with that, too (JSON). Oh, and I added a little bit of JQuery on this just to make things easier (and practice).<p>All in all, it was a busy week and it felt productive. I've mentioned this before, but with each thing I learn, the more things start to makse sense. Maybe that's what they mean by 'trust the process'. "
 }];
 
-for (post in blogPost) {
-    var wklyPosts =
-        `<div class="blogpost">
-			<h2 class="weekly" class="text-left">${blogPost[post].week}</h2>
-			<article>
-				<p class="post">${blogPost[post].entry}</p>
-			</article>
-		</div>`;
 
 
+for (var i = 0; i < blogPost.length; i++) {
+    var weekPost = `<div class="blogpost">
+                        <h2 class="weekly" class="text-left">${blogPost[i].week}</h2>
+                            <article>
+                                <p class="post">${blogPost[i].entry}</p>
+                            </article>
+                    </div>`;
+
+
+// $("#container").html.append('weekPost');
 var container = document.getElementById("container");
 
-container.innerHTML += wklyPosts;
+container.innerHTML += weekPost;
 
 }
