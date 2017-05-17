@@ -10,7 +10,8 @@ body {
   background-color: #f4f5f9; }
 
 .wrapper {
-  background-color: #252c41; }
+  background-image: url("../img/background.JPG");
+  height: 100%; }
 
 .blog_header {
   width: 100%;
