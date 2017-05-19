@@ -30,13 +30,13 @@ function makePost(post) {
     for (var weeklyPost in post){
     var blogItem = post[weeklyPost];
     postData += "<div class='blogpost'>";
-    postData += "<h2 class='weekly' class='text-left'>" + blogItem.blogWeek + "</h2>";
-    postData += "<p class='post'>" + blogItem.blogEntry + "</p>";
+    postData += "<h2 class='weekly' class='text-left'>" + blogItem.Bweek + "</h2>";
+    postData += "<p class='post'>" + blogItem.Bentry + "</p>";
     postData += "</div>";
 
     postArea.innerHTML += postData;
 
-}
+    }
 }
 
 
@@ -47,8 +47,8 @@ function makePost(post) {
 //     for (var thing in post);
 //     var blogItem = post[thing];
 //     postData += "<div class='blogpost'>";
-//     postData += "<h2 class='weekly' class='text-left'>" + blogItem.week + "</h2>";
-//     postData += "<p class='post'>" + blogItem.entry + "</p>";
+//     postData += "<h2 class='weekly' class='text-left'>" + blogItem.blogWweek + "</h2>";
+//     postData += "<p class='post'>" + blogItem.blogEntry + "</p>";
 //     postData += "</div>";
 
 //     postArea.innerHTML += postData;
