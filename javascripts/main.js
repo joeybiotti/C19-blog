@@ -27,8 +27,8 @@ function makePost(post) {
     let postArea = document.getElementById("posts");
     let postData = "";
 
-    for (var weeklyPost in post){
-    var blogItem = post[weeklyPost];
+    for (var entries in posts){
+    var blogItem = posts[entries];
     postData += "<div class='blogpost'>";
     postData += "<h2 class='weekly' class='text-left'>" + blogItem.Bweek + "</h2>";
     postData += "<p class='post'>" + blogItem.Bentry + "</p>";
