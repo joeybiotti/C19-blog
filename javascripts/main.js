@@ -2,6 +2,8 @@
 
 console.log("main.js");
 
+let $ = require('jquery');
+
 var blogPosts = new XMLHttpRequest();
 
 blogPosts.addEventListener("load", blogPostsComplete);
@@ -12,7 +14,7 @@ function blogPostsComplete(event) {
     var data = JSON.parse(event.target.responseText);
     console.log("the blog data- ", data);
 
-    makePost(data);
+    makePosts(data);
 }
 
 function blogPostsFailed(event) {
@@ -23,33 +25,17 @@ blogPosts.open("GET", "posts.json");
 blogPosts.send();
 
 
-function makePost(post) {
-    let postArea = document.getElementById("posts");
+function makePosts(posts) {
+    const postArea = document.getElementById("container");
     let postData = "";
 
-    for (var entries in posts){
-    var blogItem = posts[entries];
-    postData += "<div class='blogpost'>";
-    postData += "<h2 class='weekly' class='text-left'>" + blogItem.Bweek + "</h2>";
-    postData += "<p class='post'>" + blogItem.Bentry + "</p>";
-    postData += "</div>";
-
-    postArea.innerHTML += postData;
-
+    for (var i = 0; i < posts.length; i++) {
+        var blogItem = posts[i];
+        postData += "<div class='blogpost'>";
+        postData += "<h2 class='weekly' class='text-left'>" + blogItem.Bweek + "</h2>";
+        postData += "<p class='post'>" + blogItem.Bentry + "</p>";
+        postData += "</div>";
     }
+
+    postArea.innerHTML += posts;
 }
-
-
-// function makePost(post) {
-//     let postArea = $("#post");
-//     let postData = "";
-
-//     for (var thing in post);
-//     var blogItem = post[thing];
-//     postData += "<div class='blogpost'>";
-//     postData += "<h2 class='weekly' class='text-left'>" + blogItem.blogWweek + "</h2>";
-//     postData += "<p class='post'>" + blogItem.blogEntry + "</p>";
-//     postData += "</div>";
-
-//     postArea.innerHTML += postData;
-// }
